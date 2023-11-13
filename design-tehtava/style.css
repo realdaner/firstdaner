@@ -240,7 +240,9 @@ article p {
 
 /* "Images" */
 .article-image { 
-    max-width: 100%; /*Tämä tekee sen, että kuva ei mene yli reunasta.*/
+    max-width: 100%;
+	box-shadow: 0px 2px 10px rgba(0,0,0,50%); 
+	border-radius: 25px; /*Tämä tekee sen, että kuva ei mene yli reunasta.*/
 
 	/*Kuva voi olla koko artikkelin levyinen tai pienempi. 
 	Esim. alla olevalla kuvasta tulisi pienempi (=50%)
