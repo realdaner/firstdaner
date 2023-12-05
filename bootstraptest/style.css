@@ -1,0 +1,28 @@
+[class*="col"] {
+	padding: 1rem;
+	background-color: #618B4A;
+	border: 2px solid #fff;
+	color: #fff;
+	text-align: center;
+}
+
+[class*="card"] {
+	padding: 1rem;
+	background-color: #AFBC88;
+	border: 2px solid #fff;
+	color: #fff;
+
+	
+}
+
+.card, .card * {
+	max-width: 100%;
+	
+}
+
+
+.progress-bar {
+	width: 87%; 
+	
+}
+
