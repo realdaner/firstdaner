@@ -1,63 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-   
-   
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Nettisivuprojekti</title>
-	   <link rel="stylesheet" href="style.css">
-	      
-   </head>
-   
-   <body>
-			<header>
-				<img src="wwwicon.png" alt="Logo">
-				<h1> Nettisivuprojekti </h1>
-			</header
-			
-	<nav>       
-	
-	   <ul>
-            <li><a href="#kuntosali">Kuntosali treenit</a></li>
-            <li><a href="#">Lisäravinteet</a></li>
-            <li><a href="#">Bootstrap-osio</a></li>
-     
-        </ul>
-    </nav>
 
-	<aside>
-			<h4>Lisätiedot</h4>
-			
-				<li><a href="#">Linkki 1</a></li> 
-				<li><a href="#">Linkki 2</a></li> 
-				<li><a href="#">Linkki 3</a></li>
-				<li><a href="#">Linkki 4</a></li>
-	</aside>
-	
-	<main>
-			
-			<h2 class="väliotsikko" ><a id="kuntosali">Kuntosali treenit </a></h2> <br>
-			<article> <h2> Penkkipunnerrus </h2> 
-			<img src="" class="article-image"/>
-			</article>
-			
-				
-			
-				
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nettisivuprojekti</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="ylatunniste">
+        <header>
+            <img src="gymicon.png" alt="Logo" id="logo">
+            <h1>SuomiFitness.fi</h1>
+        </header>
+
+        <nav>
+
+            <ul>
+                <li><a href="#kuntosali">KUNTOSALI TREENIT</a></li>
+                <li><a href="#lisäravinteet">LISÄRAVINTEET</a></li>
+                <li><a href="/nettisivuprojekti/bootstrap/index.html">SALIVIHJEITÄ</a></li>
+                <li><a href="#contact-form">OTA YHTEYTTÄ</a></li>
+            </ul>
+        </nav>
 
 
+    </div>
+    <main>
+        <h2 class="väliotsikko"><a id="kuntosali">Kuntosali treenit</a></h2>
+        <div class="salitreenit">
+
+            <article>
+                <h2 class="pieniotsikko">Penkkipunnerrus</h2>
+                <img src="penkkipunnerrus.jpg" class="article-image" />
+                <div class="lista-ol">
+                    <ol>
+                        <li><b>1.</b> Asetu makaamaan penkille selkä alaspäin.</li>
+                        <li><b>2.</b> Ota levytanko käsiisi hieman olkapäiden leveydellä.</li>
+                        <li><b>3.</b> Nosta tanko rintakehälle hallitusti ja työnnä se ylös käyttäen rintalihaksia.</li>
+                        <li><b>4.</b> Toista liike halutun toistomäärän verran.</li>
+                        <li><b>5.</b> Muista pitää hyvä ryhti ja hengittää oikein liikkeen aikana.</li>
+                    </ol>
+                </div>
+            </article>
+
+            <article>
+                <h2 class="pieniotsikko">Kulmasoutu</h2>
+                <img src="kulmasoutu.jpg" class="article-image" />
+                <div class="lista-ol">
+                    <ol>
+                        <li><b>1.</b> Seiso jalat olkapäiden leveydellä ja ota käsipainot käsiisi.</li>
+                        <li><b>2.</b> Kumarru eteenpäin lantion pysyessä taaksepäin, säilytä neutraali selkäasento.</li>
+                        <li><b>3.</b> Vedä käsipainot ylös kohti rintakehää kyynärpäät taakse suunnattuina.</li>
+                        <li><b>4.</b> Alas laskiessasi pidä liike hallittuna ja kontrolloi käsipainoja.</li>
+                        <li><b>5.</b> Toista liike halutun toistomäärän verran.</li>
+                    </ol>
+                </div>
+            </article>
+
+            <article>
+                <h2 class="pieniotsikko">Kyykky</h2>
+                <img src="kyykkj.jpg" class="article-image" />
+                <div class="lista-ol">
+                    <ol>
+                        <li><b>1.</b> Asetu seisomaan jalat olkapäiden leveydellä.</li>
+                        <li><b>2.</b> Laskeudu alaspäin kyykkyasentoon pitäen selkä suorana.</li>
+                        <li><b>3.</b> Ponnista takaisin ylös käyttäen jalkalihaksia.</li>
+                        <li><b>4.</b> Muista pitää polvet linjassa varpaiden kanssa.</li>
+                        <li><b>5.</b> Toista liike halutun toistomäärän verran.</li>
+                    </ol>
+                </div>
+            </article>
+        </div>
+
+        <h2 class="väliotsikko"> <a id="lisäravinteet"> Suosituimmat kuntosali lisäravinteet </a></h2>
+        <div class="aineet">
+            <article>
+                <h2 class="pieniotsikko">Proteiinijauhe</h2>
+                <img src="proteiinijauhe.jpg" class="article-image" />
+                <div class="lista-ol">
+                    <ul>
+                        <li><b>Käyttötarkoitus:</b> Proteiinijauhe on suunniteltu täydentämään päivittäistä proteiinin
+                            saantia, mikä on tärkeää lihaskasvun, palautumisen ja yleisen terveyden kannalta. Se tarjoaa
+                            nopean ja kätevän tavan saada proteiinia, erityisesti harjoittelun jälkeen.</li>
+                        <li><b>Lähde:</b> Proteiinijauhe voi olla peräisin erilaisista proteiinin lähteistä, kuten
+                            heraproteiini, kaseiini, soijaproteiini tai kasvipohjaiset proteiinit kuten herne- tai
+                            riisiproteiini.</li>
+                        <li><b>Hyödyt:</b>
+                            <ul>
+                                <li>Edistää lihaskasvua ja palautumista.</li>
+                                <li>Nopea ja helppo tapa saada proteiinia ilman suurta ruoanvalmistusta.</li>
+                                <li>Sopii erityisesti henkilöille, jotka tarvitsevat lisää proteiinia ruokavalioonsa.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <h2 class="pieniotsikko">Kreatiini</h2>
+                <img src="kreatiini.jpg" class="article-image" />
+                <div class="lista-ol">
+                    <ul>
+                        <li><b>Käyttötarkoitus:</b> Kreatiini on aminohappo, joka auttaa soluja tuottamaan energiaa
+                            nopeammin, erityisesti lyhytkestoisissa, korkean intensiteetin harjoituksissa. Se voi
+                            parantaa voimaa ja nopeuttaa lihaskasvua.</li>
+                        <li><b>Lähde:</b> Kreatiini löytyy luonnollisesti lihasta ja kalaöljystä. Lisäravinteena se on
+                            yleensä kreatiinimonohydraatti-muodossa.</li>
+                        <li><b>Hyödyt:</b>
+                            <ul>
+                                <li>Lisää voimaa ja suorituskykyä.</li>
+                                <li>Edistää lihasten täyteyttä vedellä ja proteiinisynteesiä.</li>
+                                <li>Auttaa palautumisessa ja vähentää lihasväsymystä.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </article>
 
 
+            <article>
+                <h2 class="pieniotsikko">Magnesium</h2>
+                <img src="magnesium.jpg" class="article-image" />
+                <div class="lista-ol">
+                    <ul>
+                        <li><b>Käyttötarkoitus:</b> Magnesium on elintärkeä kivennäisaine, joka osallistuu moniin
+                            elimistön toimintoihin, kuten lihasten toimintaan, hermoston toimintaan ja luuston
+                            vahvuuteen.</li>
+                        <li><b>Lähde:</b> Magnesiumia löytyy monista ruoka-aineista, kuten pähkinöistä, siemenistä,
+                            vihreistä vihanneksista ja täysjyväviljoista. Sitä on saatavilla myös lisäravinteina, kuten
+                            magnesiumsitraattina tai magnesiumoksidina.</li>
+                        <li><b>Hyödyt:</b>
+                            <ul>
+                                <li>Säätää lihasten toimintaa ja hermoston toimintaa.</li>
+                                <li>Edistää luuston terveyttä ja vahvuutta.</li>
+                                <li>Voi auttaa lievittämään lihaskramppeja ja edistää rentoutumista.</li>
+                                <li>Osallistuu satoihin biokemiallisiin reaktioihin elimistössä.</li>
+                            </ul>
+                        </li>
+                    </ul>
 
+                </div>
 
+            </article>
 
+        </div>
+        <hr>
+    </main>
+    </div> <!-- Sulje .ylatunniste-div -->
+    <div id="contact-form">
+        <h2>Ota Yhteyttä</h2>
+        <form action="#" method="POST">
+            <label for="name">Nimi:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" name="email" required>
 
+            <label for="message">Viesti:</label>
+            <textarea id="message" name="message" required></textarea>
 
+            <input type="submit" value="Lähetä">
+        </form>
+    </div>
+    <footer>
+        <p>&copy 2023 SuomiFitness.fi - Däner Alawerdi</p>
+    </footer>
+</body>
 
-
-	</main>
-	</body>
-
-</html>   
+</html>

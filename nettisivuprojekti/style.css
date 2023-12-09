@@ -1,9 +1,272 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141415;
+    /* Taustaväri */
+}
+
+header {
+    color: #F2E9DC;
+    /* Tekstin väri */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2.2rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    border: 1px solid #F2E9DC;
+    border-radius: 7px;
+    background-color: #499167;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+nav ul li:hover {
+    transition: 0.5s;
+    background-color: #2e573f;
+}
+
+nav a {
+    text-decoration: double;
+    color: white;
+    /* Tekstin väri */
+    font-weight: bold;
+    font-size: 0.95rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: grab;
+
+}
+
+.ylatunniste {
+    background-image: url(kuntosali.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
 main {
-	width: 80%;
-	display: flex;
-	flex-wrap: wrap;
-}	
-aside {
-		width: 20%;
-		border-radius: 10px;
+    width: 100%;
+    float: left;
+    padding-bottom: 2%;
+}
+
+.väliotsikko {
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid #F2E9DC;
+    border-bottom: 1px solid #F2E9DC;
+    font-size: 2.7rem;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.väliotsikko a {
+    color: #F2E9DC;
+}
+
+.väliotsikko a:hover {
+    text-decoration: none;
+}
+
+article {
+    border: 3px solid #403D39;
+    width: calc(33.33% - 35px);
+    margin: 0 10px 35px;
+    padding: 20px;
+    box-shadow: 0 0 1 rgba(0, 0n, 0, 0.5);
+    border-radius: 3%;
+    background-color: #F2E9DC;
+}
+
+article h2 {
+    text-align: center;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: 5%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.article-image:hover {
+    transform: scale(1.15) translateY(-5px);
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.9);
+
+
+}
+
+ul,
+ol {
+    margin: 10px 0;
+}
+
+ul ul,
+ol ul {
+    margin-top: 0;
+}
+
+article ol li {
+    list-style: none;
+}
+
+ul li,
+ol li {
+    margin-bottom: 5px;
+
+}
+
+h2,
+h4 {
+    color: #403D39;
+    /* Tekstin väri */
+}
+
+h2 a {
+    color: #403D39;
+    /* Linkin väri */
+    text-decoration: none;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+
+/* Uusi lisäys: Käytä flexboxia "salitreenit" artikkeleille */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Uusi lisäys: Määritä leveys artikkeleille flexboxissa */
+.flex-container article {
+    width: 30%;
+    /* Voit säätää leveyttä tarpeen mukaan */
+    margin-right: 3%;
+    /* Luo väli artikkeleiden välille */
+}
+
+/* Uusi lisäys: Poista oikea marginaali viimeiseltä artikkelilta */
+.flex-container article:last-child {
+    margin-right: 0;
+}
+
+.aineet {
+    display: flex;
+}
+
+.salitreenit {
+    display: flex;
+}
+
+#kuntosali {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+
+
+}
+
+#logo {
+    width: 125px;
+}
+
+.lista-ol {
+    background-color: white;
+    border-radius: 10px;
+    border-style: groove
+}
+
+.pieniotsikko {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+
+}
+
+#contact-form {
+    max-width: 500px;
+    margin: 50px auto;
+    /* Updated margin-top to 50px */
+    padding: 80px;
+    background-color: #403D39;
+    /* Musta taustaväri */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    /* Vaalea varjo */
+    max-height: 480px;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    border: 5px solid #F2E9DC;
+}
+
+#contact-form:hover {
+    transform: scale(1.05);
+}
+
+#contact-form h2 {
+    color: #F2E9DC;
+    /* Vaalea tekstin väri */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-bottom: 8px;
+    color: #F2E9DC;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #F2E9DC;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #499167;
+    color: #F2E9DC;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #2e573f;
+}
+
+#contact-form textarea:focus,
+#contact-form input:focus {
+    border-color: #499167;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #F2E9DC;
+    text-align: center;
+    padding: 0.1% 0;
+    font-size: 0.9rem;
 }
